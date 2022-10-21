@@ -1,0 +1,132 @@
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    }
+
+    html, body {
+        height: 100%;
+    }
+/* Navbar*/
+
+
+
+ .text-nav{font-size: 0.6rem;}
+
+.nav-link:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+ 
+  
+  .nav-link {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 4px;
+    bottom: -2px;
+    border-radius: 20px;
+    left: 15%;
+    background-color: #34b46c;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+
+
+
+
+  /*landing*/
+
+  .container-custom{
+    width: 80%;
+    margin: 0 auto;
+  }
+  .rotate {
+    transform: rotate(180deg)!important;
+     writing-mode: vertical-lr!important;
+     text-align: left!important;
+
+  
+  }
+
+.text-main{
+    font-size: 2rem;
+}
+
+  .green{
+    color: #34b46c;;
+  }
+
+
+
+  /*footer*/
+  .postion-b-0 {
+    bottom: 0;
+    
+  }
+.bg-img{
+    background-position: right;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+
+}
+
+.bg-img-2{
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-footer{
+    font-size: 0.5rem;
+    text-align: left;
+    margin-top: 10px;
+}
+
+
+@media (min-width: 992px) { 
+    
+    .text-nav{font-size: 1rem;}
+    .text-main{
+        font-size: 3.5rem;
+    }
+    .bg-img{
+
+        background-size: 100% 109px !important;
+
+    }
+
+    .text-footer{
+        font-size: 1rem;
+    }
+ }
+
+ @media (max-width: 992px) {
+
+    .bgimg {
+      background-image: none!important;
+  }
+
+}
+
+.overflown-hidden{
+    overflow: hidden;
+}
